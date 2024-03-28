@@ -47,10 +47,12 @@ void *firstList(List *list) {
 }
 
 void *nextList(List *list) {
-  if (list->current < list->tail - 1) {
-    list->current++;
-    return list->current;
-  }
+  if (list == NULL)
+    return NULL;
+  if (list->current == NULL)
+    return NULL;
+
+  list->current = list->current->next;
   return list->current->data;
 }
 
