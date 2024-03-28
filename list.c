@@ -45,10 +45,11 @@ void *firstList(List *list) {
   }
   return NULL;
 }
+
 void *nextList(List *list) {
   if (list->current < list->tail - 1) {
     list->current++;
-    return list->current;
+    return list->current->data;
   }
   return list->current->data;
 }
