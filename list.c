@@ -78,12 +78,17 @@ void *prevList(List *list) {
 }
 
 void pushFront(List *list, void *data) {
+  Node *newN = createNode(data);
   if (list == NULL)
     return;
-  Node *newN = createNode(data);
-  newN->next = list->head;
-  list->head->prev = newN;
-  list->head = newN;
+  if (list->head == NULL) {
+    list->head = newN;
+    list->tail = newN;
+  } else {
+    newN->next = list->head;
+    list->head->prev = newN;
+    list->head = newN;
+  }
 }
 
 void pushBack(List *list, void *data) {
