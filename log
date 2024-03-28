@@ -364,3 +364,22 @@ list.c:133:9: error: unused variable ‘data’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 625e3a9
+Thu 28 Mar 2024 08:26:36 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:148:10: error: ‘dato’ undeclared (first use in this function); did you mean ‘data’?
+  148 |   return dato;
+      |          ^~~~
+      |          data
+list.c:148:10: note: each undeclared identifier is reported only once for each function it appears in
+list.c:133:9: error: unused variable ‘data’ [-Werror=unused-variable]
+  133 |   void *data = nodePipipi->data;
+      |         ^~~~
+list.c:149:1: error: control reaches end of non-void function [-Werror=return-type]
+  149 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+b528766
