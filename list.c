@@ -44,7 +44,7 @@ void *firstList(List *list) {
   return list->current;
 }
 void *nextList(List *list) {
-  if (list->current < list->tail) {
+  if (list->current < list->tail - 1) {
     list->current++;
     return list->current;
   }
