@@ -37,11 +37,12 @@ List *createList() {
 }
 
 void *firstList(List *list) {
-  if (list != NULL)
+  if (list->head != NULL) {
     list->current = list->head;
-  else
+    return list->currente->data;
+  } else
     return NULL;
-  return list->current;
+  return list->current->data;
 }
 void *nextList(List *list) {
   if (list->current < list->tail - 1) {

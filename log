@@ -143,3 +143,14 @@ Thu 28 Mar 2024 07:10:20 PM UTC:
  tests:  1|5
 total_score: 10/70
 d796444
+Thu 28 Mar 2024 07:11:36 PM UTC: 
+ list.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:18: error: ‘List’ {aka ‘struct List’} has no member named ‘currente’; did you mean ‘current’?
+   42 |     return list->currente->data;
+      |                  ^~~~~~~~
+      |                  current
+Compilation failed
+c1c4a09
