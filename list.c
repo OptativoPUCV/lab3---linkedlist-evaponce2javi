@@ -39,11 +39,11 @@ List *createList() {
 void *firstList(List *list) {
   if (list->head == NULL)
     return NULL;
-  if (list->head != NULL) {
-    list->current = list->head;
-    return list->current->data;
-  }
-  return NULL;
+  else if (list == NULL)
+    return NULL;
+
+  list->current = list->head;
+  return list->head->data;
 }
 
 void *nextList(List *list) {
