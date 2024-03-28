@@ -145,7 +145,7 @@ void *popCurrent(List *list) {
     nodePipipi->next->prev = nodePipipi->next;
     nodePipipi->prev->next = nodePipipi->prev;
   }
-  return dato;
+  return data;
 }
 
 void cleanList(List *list) {
