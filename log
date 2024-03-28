@@ -49,3 +49,8 @@ list.c:40:9: error: unused variable ‘first’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 872e308
+Thu 28 Mar 2024 06:55:58 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+51f8cb9
