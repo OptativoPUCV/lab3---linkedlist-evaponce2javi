@@ -54,3 +54,13 @@ Thu 28 Mar 2024 06:55:58 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 51f8cb9
+Thu 28 Mar 2024 06:56:45 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:40:27: error: array subscript is not an integer
+   40 |   void *first = list->head[list->current];
+      |                           ^
+Compilation failed
+2f87088
