@@ -333,3 +333,17 @@ list.c:133:9: error: unused variable ‘data’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 3392aa0
+Thu 28 Mar 2024 08:25:28 PM UTC: 
+ list.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:133:9: error: unused variable ‘data’ [-Werror=unused-variable]
+  133 |   void *data = nodePipipi->data;
+      |         ^~~~
+list.c:148:1: error: control reaches end of non-void function [-Werror=return-type]
+  148 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+51fcc52

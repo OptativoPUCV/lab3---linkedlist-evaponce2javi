@@ -138,7 +138,13 @@ void *popCurrent(List *list) {
     list->head = list->head->next;
   }
 
-  return NULL;
+  else if (nodePipipi == list->tail) {
+    list->tail = list->tail->prev;
+    list->tail->next = NULL;
+  } else {
+    nodePipipi->next->prev = nodePipipi->next;
+    nodePipipi->prev->next = nodePipipi->prev;
+  }
 }
 
 void cleanList(List *list) {
