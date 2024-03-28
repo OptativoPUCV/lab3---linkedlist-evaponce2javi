@@ -154,3 +154,9 @@ list.c:42:18: error: ‘List’ {aka ‘struct List’} has no member named ‘c
       |                  current
 Compilation failed
 c1c4a09
+Thu 28 Mar 2024 07:11:45 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+f59c915
