@@ -125,11 +125,11 @@ void *popBack(List *list) {
 }
 
 void *popCurrent(List *list) {
-  Node *nodePipipi = list->current;
 
   if (list == NULL || list->current == NULL)
     return NULL;
 
+  Node *nodePipipi = list->current;
   void *data = nodePipipi->data;
 
   if (nodePipipi == list->head) {
@@ -141,9 +141,10 @@ void *popCurrent(List *list) {
   else if (nodePipipi == list->tail) {
     list->tail = list->tail->prev;
     list->tail->next = NULL;
+
   } else {
-    nodePipipi->next->prev = nodePipipi->next;
-    nodePipipi->prev->next = nodePipipi->prev;
+    nodePipipi->prev->next = nodePipipi->next;
+    nodePipipi->next->prev = nodePipipi->prev;
   }
   return data;
 }
