@@ -246,3 +246,9 @@ list.c:65:3: error: ‘last’ undeclared (first use in this function); did you 
 list.c:65:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 f32fed9
+Thu 28 Mar 2024 07:50:15 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|4
+total_score: 25/70
+3c1981d
