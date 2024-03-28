@@ -1,0 +1,19 @@
+Thu 28 Mar 2024 06:49:27 PM UTC: 
+ list.c | 48 ++++++++++++++++++++----------------------------
+ 1 file changed, 20 insertions(+), 28 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:33:3: error: ‘lista’ undeclared (first use in this function); did you mean ‘ista’?
+   33 |   lista->head = NULL;
+      |   ^~~~~
+      |   ista
+list.c:33:3: note: each undeclared identifier is reported only once for each function it appears in
+list.c:32:9: error: unused variable ‘ista’ [-Werror=unused-variable]
+   32 |   List *ista = (List *)malloc(sizeof(List));
+      |         ^~~~
+list.c:37:1: error: control reaches end of non-void function [-Werror=return-type]
+   37 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+5b4d98f
