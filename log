@@ -64,3 +64,14 @@ list.c:40:27: error: array subscript is not an integer
       |                           ^
 Compilation failed
 2f87088
+Thu 28 Mar 2024 06:59:04 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:42:17: error: ‘L’ undeclared (first use in this function)
+   42 |   void *first = L->head->data;
+      |                 ^
+list.c:42:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+f972062
