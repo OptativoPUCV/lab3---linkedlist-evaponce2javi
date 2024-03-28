@@ -43,7 +43,11 @@ void *firstList(List *list) {
     return NULL;
   return list->current;
 }
-void *nextList(List *list) { return NULL; }
+void *nextList(List *list) {
+  if (list->current < list->tail)
+    list->current++;
+  return list->current;
+}
 
 void *lastList(List *list) { return NULL; }
 
