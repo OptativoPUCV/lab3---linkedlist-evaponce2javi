@@ -126,13 +126,18 @@ void *popBack(List *list) {
 
 void *popCurrent(List *list) {
   Node *nodePipipi = list->current;
+
   if (list == NULL || list->current == NULL)
     return NULL;
+
   void *data = nodePipipi->data;
 
-  if (nodePipipi = list->head) {
-    list->head->prev->prev = NULL;
+  if (nodePipipi == list->head) {
+    if (list->head->next != NULL)
+      list->head->next->prev = NULL;
+    list->head = list->head->next;
   }
+
   return NULL;
 }
 

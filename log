@@ -322,3 +322,14 @@ list.c:131:9: error: unused variable ‘data’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 b61faea
+Thu 28 Mar 2024 08:22:24 PM UTC: 
+ list.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:133:9: error: unused variable ‘data’ [-Werror=unused-variable]
+  133 |   void *data = nodePipipi->data;
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3392aa0
