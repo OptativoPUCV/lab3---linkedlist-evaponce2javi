@@ -40,45 +40,44 @@ void *firstList(List *list) {
   if (list->head != NULL) {
     list->current = list->head;
     return list->current->data;
-  } else
+
     return NULL;
-  return list->current->data;
-}
-void *nextList(List *list) {
-  if (list->current < list->tail - 1) {
-    list->current++;
-    return list->current;
   }
-  return list->current->data;
-}
-
-void *lastList(List *list) { return NULL; }
-
-void *prevList(List *list) { return NULL; }
-
-void pushFront(List *list, void *data) {}
-
-void pushBack(List *list, void *data) {
-  list->current = list->tail;
-  pushCurrent(list, data);
-}
-
-void pushCurrent(List *list, void *data) {}
-
-void *popFront(List *list) {
-  list->current = list->head;
-  return popCurrent(list);
-}
-
-void *popBack(List *list) {
-  list->current = list->tail;
-  return popCurrent(list);
-}
-
-void *popCurrent(List *list) { return NULL; }
-
-void cleanList(List *list) {
-  while (list->head != NULL) {
-    popFront(list);
+  void *nextList(List * list) {
+    if (list->current < list->tail - 1) {
+      list->current++;
+      return list->current;
+    }
+    return list->current->data;
   }
-}
+
+  void *lastList(List * list) { return NULL; }
+
+  void *prevList(List * list) { return NULL; }
+
+  void pushFront(List * list, void *data) {}
+
+  void pushBack(List * list, void *data) {
+    list->current = list->tail;
+    pushCurrent(list, data);
+  }
+
+  void pushCurrent(List * list, void *data) {}
+
+  void *popFront(List * list) {
+    list->current = list->head;
+    return popCurrent(list);
+  }
+
+  void *popBack(List * list) {
+    list->current = list->tail;
+    return popCurrent(list);
+  }
+
+  void *popCurrent(List * list) { return NULL; }
+
+  void cleanList(List * list) {
+    while (list->head != NULL) {
+      popFront(list);
+    }
+  }
