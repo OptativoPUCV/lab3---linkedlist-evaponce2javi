@@ -308,3 +308,17 @@ list.c:131:9: error: unused variable ‘data’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ddd1f9e
+Thu 28 Mar 2024 08:16:46 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:133:7: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  133 |   if (nodePipipi = list->head) {
+      |       ^~~~~~~~~~
+list.c:131:9: error: unused variable ‘data’ [-Werror=unused-variable]
+  131 |   void *data = nodePipipi->data;
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b61faea

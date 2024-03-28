@@ -125,7 +125,7 @@ void *popBack(List *list) {
 }
 
 void *popCurrent(List *list) {
-  node *nodePipipi = list->current;
+  Node *nodePipipi = list->current;
   if (list == NULL || list->current == NULL)
     return NULL;
   void *data = nodePipipi->data;
