@@ -128,7 +128,7 @@ void *popCurrent(List *list) {
   Node *nodePipipi = list->current;
 
   if (list == NULL || list->current == NULL)
-    return NULL;
+    return;
 
   void *data = nodePipipi->data;
 
